@@ -1,0 +1,55 @@
+body{
+	font-family: "raleway", Sans-serif;
+	background: rgb(20, 20, 20);
+	
+}
+.container{
+	width: 650px;
+}
+header{
+	background-color: rgb(44, 142, 153);
+	text-align :center;
+	text-transform: uppercase;
+	color: white;
+	padding: 15px;
+}
+span{
+	font-size: 3em;
+}
+h2{
+	font-size: 1.5em;
+	
+}
+#choix{
+	background-color: #fff;
+}
+button{
+	border-style: none;
+	background : none;
+	font-weight: bold;
+	color: rgb(44, 142, 153);
+}
+.clicked{
+	background: rgb(44, 142, 153);
+	color: rgb(255, 255, 255);
+}
+p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#align{
+	display: flex;
+	justify-content: space-around;
+}
+#jeu{
+	padding-top: 30px;
+}
+.color{
+	background-color: red;
+	border-radius: 25px;
+	width: 170px;
+	height: 150px;
+	float: left;
+	margin: 10px;
+	transition-duration: 0.3s;
+}

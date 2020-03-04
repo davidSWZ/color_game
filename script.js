@@ -26,7 +26,10 @@ function RGBaTrouver(){
 	else{
 		var i = Math.round((Math.random()*2));
 	}
-	span.textContent = button[i].style.background;
+	var str = button[i].style.background
+	const textColorCoupe = str.split('n');
+	span.textContent = textColorCoupe[0] ;
+	console.log(span.textContent);
 };
 
 function newColor (){
@@ -48,7 +51,7 @@ function newColor (){
 		btnEasy.style.background = baseColor;
 		btnEasy.style.color = "white";
 	}
-	
+
 	RGBaTrouver();
 };
 
@@ -60,7 +63,7 @@ function test(){
 			// button[i].classList.add("color");
 			button[i].style.background = this.style.background;
 		}
-		
+
 		btnNew.style.color = this.style.background;
 		if (hard){
 			btnHard.style.background = this.style.background;
@@ -118,4 +121,3 @@ btnEasy.addEventListener("click", clicEasy);
 btnHard.addEventListener("click", clicHard);
 //--------------------------------------LAUNCH FUNCTION---------------------------
 newColor();
-

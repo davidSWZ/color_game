@@ -27,7 +27,7 @@ function RGBaTrouver(){
 		var i = Math.round((Math.random()*2));
 	}
 	var str = button[i].style.background
-	const textColorCoupe = str.split(')');
+	const textColorCoupe = str.split(' n');
 	span.textContent = textColorCoupe[0] ;
 	console.log(span.textContent);
 };
